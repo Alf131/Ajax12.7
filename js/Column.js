@@ -1,3 +1,4 @@
+var baseUrl = 'https://kodilla.com/pl/bootcamp-api';
 function Column(id, name) {
 	var self = this;
 	

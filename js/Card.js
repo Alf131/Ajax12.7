@@ -1,4 +1,5 @@
 // KLASA KANBAN CARD
+var baseUrl = 'https://kodilla.com/pl/bootcamp-api';
 function Card(id, name) {
 	var self = this;
 	
