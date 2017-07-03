@@ -43,11 +43,12 @@ function Column(id, name) {
 			return column;
 		}
 	}
+
 Column.prototype = {
 	createCard: function(card) {
 	  this.element.children('ul').append(card.element);
 	},
-	ddeleteColumn: function() {
+	deleteColumn: function() {
     var self = this;
     $.ajax({
       url: baseUrl + '/column/' + self.id,
