@@ -1,4 +1,3 @@
-var baseUrl = 'https://kodilla.com/pl/bootcamp-api';
 function Column(id, name) {
 	var self = this;
 	
@@ -26,10 +25,10 @@ function Column(id, name) {
 	        url: baseUrl + '/card',
 	        method: 'POST',
 	        data: {
-	        name: cardName,
-    		bootcamp_kanban_column_id: self.id
+	        	name: cardName,
+    			bootcamp_kanban_column_id: self.id
 	        },
-	        success: function() {
+	        success: function(response) {
             var card = new Card(response.id, cardName);
         	self.createCard(card);
         }
